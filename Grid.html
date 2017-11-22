@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+
+    <style>
+        
+    .wrapper {
+        display:grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas:
+            "footer footer"
+            "header header"
+            "title title"
+            "side content"
+           ;
+
+
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .side {
+        grid-area: side;
+    }
+
+    .content {
+        grid-area: content;
+        
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+    
+
+    .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="title">Title</div>
+        <div class="side">Side Bar</div>
+        <div class="content">Content
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi laboriosam facilis ducimus maxime corrupti et perspiciatis incidunt animi eaque, sed dignissimos? Alias voluptatum culpa aspernatur aliquid voluptatem! Itaque sapiente exercitationem error, ullam, nihil fuga illo quasi eveniet cum quas odio!
+
+        </div>
+        <div class="footer">Footer</div>
+      </div>
+      
+</body>
+</html>
